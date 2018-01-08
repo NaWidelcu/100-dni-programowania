@@ -1,0 +1,39 @@
+import random
+print ("Witaj w generatorze imion!")
+print ("Jeśli mam wygenerować imię męskie kiknij 'M', jeśli damskie kliknij 'K'. Jeśli chcesz zakończyć, kliknij 'Q'")
+
+imiona_damskie = ("Ola","Kasia","Magda")
+imiona_męskie = ("Jan", "Sebastian","Kaziu")
+nazwiska_męskie = ("Nowak", "Kowalski", "Kwiatkowski", "Poznański")
+nazwiska_damskie = ("Nowak","Kowalska","Kwiatkowska","Poznańska")
+
+while True:
+    odpowiedź = input ()
+    if odpowiedź == "M" or odpowiedź == "m":
+     nazwisko_męskie = random.choice(nazwiska_męskie)
+     imię_męskie = random.choice(imiona_męskie)
+
+     wylosowane_dane_męskie = imię_męskie + " " + nazwisko_męskie
+
+     print(wylosowane_dane_męskie)
+     print("Liczba liter w wylosowanym imieniu i nazwisku to", len(wylosowane_dane_męskie)-1)
+     
+
+    elif odpowiedź == "K" or odpowiedź == "k":
+     imię_damskie = random.choice(imiona_damskie)
+     nazwisko_damskie = random.choice(nazwiska_damskie)
+
+     wylosowane_dane_damskie = (imię_damskie) + (" "+ nazwisko_damskie)
+
+     print (wylosowane_dane_damskie)
+     print("Liczba liter w wylosowanym imieniu i nazwisku to", len(wylosowane_dane_damskie)-1)
+     
+
+    elif odpowiedź == "Q" or odpowiedź == "q":
+     print ("Koniec programu")
+     break
+
+    else:
+        print ("Jeśli mam wygenerować imię męskie kiknij 'M', jeśli damskie kliknij 'K'. Jeśli chcesz zakończyć, kliknij 'Q'")
+         
+
