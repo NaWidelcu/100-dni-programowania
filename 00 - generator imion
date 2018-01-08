@@ -1,5 +1,5 @@
 import random
-print ("Witaj w generatorze imion!")
+print ("Witaj w generatorze imion i nazwisk!")
 print ("Jeśli mam wygenerować imię męskie kiknij 'M', jeśli damskie kliknij 'K'. Jeśli chcesz zakończyć, kliknij 'Q'")
 
 imiona_damskie = ("Ola","Kasia","Magda")
